@@ -1,6 +1,6 @@
 {
   "name": "wkx-es",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "A WKT/WKB/EWKT/EWKB/TWKB/GeoJSON parser and serializer",
   "main": "lib/wkx.js",
   "types": "lib/wkx.d.ts",
@@ -13,7 +13,6 @@
     "build": "mkdirp ./dist && browserify -r buffer -r ./lib/wkx.js:wkx ./lib/wkx.js > ./dist/wkx.js && uglifyjs -c -m -- ./dist/wkx.js > ./dist/wkx.min.js",
     "coveralls": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
-  "author": "Christian Schwarz",
   "license": "MIT",
   "devDependencies": {
     "async": "^2.6.0",
@@ -30,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/cschwarz/wkx.git"
+    "url": "https://github.com/Nybkox/wkx-es"
   },
   "keywords": [
     "wkt",
